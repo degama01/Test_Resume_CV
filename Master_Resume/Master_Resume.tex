@@ -1,0 +1,447 @@
+%% Template for a CV
+%% Author: Rob J Hyndman
+%% Modified: Nat Price
+
+\documentclass[10pt,a4paper,]{article}
+\usepackage[scaled=0.86]{DejaVuSansMono}
+\usepackage[sfdefault,lf,t]{carlito}
+
+% Change color to blue
+\usepackage{color,xcolor}
+\definecolor{headcolor}{HTML}{990000}
+
+\usepackage{ifxetex,ifluatex}
+\usepackage{fixltx2e} % provides \textsubscript
+\ifnum 0\ifxetex 1\fi\ifluatex 1\fi=0 % if pdftex
+  \usepackage[T1]{fontenc}
+  \usepackage[utf8]{inputenc}
+\else % if luatex or xelatex
+  \ifxetex
+    \usepackage{mathspec}
+  \else
+    \usepackage{fontspec}
+  \fi
+  \defaultfontfeatures{Ligatures=TeX,Scale=MatchLowercase}
+\fi
+
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+
+% use upquote if available, for straight quotes in verbatim environments
+\IfFileExists{upquote.sty}{\usepackage{upquote}}{}
+% use microtype if available
+\IfFileExists{microtype.sty}{%
+\usepackage[]{microtype}
+\UseMicrotypeSet[protrusion]{basicmath} % disable protrusion for tt fonts
+}{}
+\PassOptionsToPackage{hyphens}{url} % url is loaded by hyperref
+\usepackage[unicode=true,hidelinks]{hyperref}
+\urlstyle{same}  % don't use monospace font for urls
+\usepackage{geometry}
+\geometry{left=1.75cm,right=1.75cm,top=2.2cm,bottom=2cm}
+
+\IfFileExists{parskip.sty}{%
+\usepackage{parskip}
+}{% else
+\setlength{\parindent}{0pt}
+\setlength{\parskip}{6pt plus 2pt minus 1pt}
+}
+\setlength{\emergencystretch}{3em}  % prevent overfull lines
+\providecommand{\tightlist}{%
+  \setlength{\itemsep}{0pt}\setlength{\parskip}{0pt}}
+\setcounter{secnumdepth}{0}
+
+% set default figure placement to htbp
+\makeatletter
+\def\fps@figure{htbp}
+\makeatother
+
+
+
+\date{April 2024}
+
+
+\usepackage{paralist,ragged2e,datetime}
+\usepackage[hyphens]{url}
+\usepackage{fancyhdr,enumitem,pifont}
+\usepackage[compact,small,sf,bf]{titlesec}
+
+\RaggedRight
+\sloppy
+
+% Use fontawesome. Note: you'll need TeXLive 2015. Update.
+\usepackage{fontawesome}
+
+\def\maketitle{
+\vspace*{-1.4cm}
+\thispagestyle{empty}
+\centerline{\huge \bf Matthew K de Gannes, PhD}
+
+%job title
+
+\vspace{1 mm}
+\centerline{
+%address
+\faicon{map-marker} Medpace, Inc., 5400 Medpace Way, Cincinnati OH
+45227 \hspace{1 mm} %
+%github
+%
+%twitter
+%
+%phone
+\faicon{phone} 413-588-4414 \hspace{1 mm} %
+%email
+\faicon{envelope} \href{mailto:}{\color{black} \href{mailto:matthew.degannes@gmail.com}{\nolinkurl{matthew.degannes@gmail.com}}} \hspace{1 mm} %
+%linkedin
+\faicon{linkedin} \href{https://www.linkedin.com/in/mdegannes}{mdegannes} \hspace{1 mm} %
+%scholar
+%
+%orcid
+%
+%website
+%
+}
+
+\vspace{2 mm}
+\hrule
+}
+
+% Header and footer
+\pagestyle{fancy}
+\makeatletter
+\lhead{\sf\textcolor[gray]{0.4}{Resume: Matthew K de Gannes, PhD}}
+\rhead{\sf\textcolor[gray]{0.4}{\thepage}}
+\cfoot{}
+\def\headrule{{\color[gray]{0.4}\hrule\@height\headrulewidth\@width\headwidth \vskip-\headrulewidth}}
+\makeatother
+
+% Header box
+\usepackage{tabularx}
+
+% \makeatletter
+\def\name#1{\def\@name{#1}}
+% \def\info#1{\def\@info{#1}}
+% \makeatother
+% \newcommand{\shadebox}[3][.9]{\fcolorbox[gray]{0}{#1}{\parbox{#2}{#3}}}
+% 
+% \usepackage{calc}
+% \newlength{\headerboxwidth}
+% \setlength{\headerboxwidth}{\textwidth}
+% %\addtolength{\headerboxwidth}{0.2cm}
+% \makeatletter
+% \def\maketitle{
+% \thispagestyle{plain}
+% \vspace*{-1.4cm}
+% \shadebox[0.9]{\headerboxwidth}{\sf\color{headcolor}\hfil
+% \hbox to 0.98\textwidth{\begin{tabular}{l}
+% \\[-0.3cm]
+% \LARGE\textbf{\@name}
+% \\[0.1cm]\large Clinical Research Associate\\[0.6cm]
+% \normalsize\textbf{Resume}\\
+% \normalsize April 2024
+% \end{tabular}
+% \hfill\hbox{\fontsize{9}{12}\sf
+% \begin{tabular}{@{}rl@{}}
+% \@info
+% \end{tabular}}}\hfil
+% }
+% \vspace*{0.2cm}}
+% \makeatother
+% 
+% Section headings
+\titlelabel{}
+\titlespacing{\section}{0pt}{1.5ex}{0.5ex}
+\titleformat*{\section}{\large\sf\bfseries}
+\titleformat*{\subsection}{\sf\bfseries}
+\titlespacing{\subsection}{0pt}{1ex}{0.5ex}
+
+% \renewcommand\maketitle{}
+
+% Miscellaneous dimensions
+\setlength{\parskip}{0ex}
+\setlength{\parindent}{0em}
+\setlength{\headheight}{15pt}
+\setlength{\tabcolsep}{0.15cm}
+\clubpenalty = 10000
+\widowpenalty = 10000
+\setlist{itemsep=1pt}
+\setdescription{labelwidth=1.2cm,leftmargin=1.5cm,labelindent=1.5cm,font=\rm}
+
+% NBP: Use default bullets
+% Make nicer bullets
+% \renewcommand{\labelitemi}{\ding{228}}
+
+\usepackage{booktabs,fontawesome}
+%\usepackage[t1,scale=0.86]{sourcecodepro}
+
+\name{Matthew K de Gannes, PhD}
+% \def\imagetop#1{\vtop{\null\hbox{#1}}}
+% \info{%
+% \raisebox{-0.05cm}{\imagetop{\faicon{map-marker}}} &  \imagetop{\begin{tabular}{@{}l@{}}Medpace,
+Inc., 5400 Medpace Way, Cincinnati OH 45227\end{tabular}}\\ %
+% % %
+% \faicon{phone} & 413-588-4414\\% 
+% \faicon{envelope} & \href{mailto:matthew.degannes@gmail.com}{\nolinkurl{matthew.degannes@gmail.com}}\\%
+% %
+% %
+% \faicon{linkedin} & \href{https://www.linkedin.com/in/mdegannes}{mdegannes}\\%
+% %
+% %
+% }
+
+
+%\usepackage{inconsolata}
+
+
+
+% Templates for detailed entries
+% Arguments: what when with where why
+\usepackage{etoolbox}
+
+% Templates for detailed entries
+% Arguments: what when with where why
+% NBP: Increase font size of 'with'
+%      Decrease size of 'where'
+%      Add space before bullets
+%      Remove bullet indent
+\def\detaileditem#1#2#3#4#5#6{
+#2 & \parbox[t]{0.85\textwidth}{%
+      \textbf{#1}\hfill{#3}\\
+      \ifx{#4\land#5}\empty\else{\footnotesize #4 \normalsize \hfill{#5}\par}\fi%
+      \ifx#6\empty\else{%
+        \vspace{0.5\parsep}
+        \begin{minipage}{0.7\textwidth}%
+        \begin{itemize}[leftmargin=*]#6\end{itemize}%
+        \end{minipage}}\fi%
+      \vspace{\parsep}}\\}
+\def\detailedsection#1{\begin{tabular*}{\textwidth}{@{\extracolsep{\fill}}ll}#1\end{tabular*}}
+
+% Templates for brief entries
+% Arguments: what when with
+\def\briefitem#1#2#3{
+#2 & \parbox[t]{0.85\textwidth}{%
+      {#1}\\{\footnotesize #3}}\\}
+\def\briefsection#1{\begin{tabular*}{\textwidth}{@{\extracolsep{\fill}}ll}#1\end{tabular*}}
+
+\def\endfirstpage{\newpage}
+
+\begin{document}
+\maketitle
+
+
+\section{Summary of Qualifications}\label{summary-of-qualifications}
+
+\textbf{Clinical Research Associate with 10 years of experience in the
+following areas:}
+
+\begin{itemize}
+\tightlist
+\item
+  Highly motivated writer with extensive training and expertise in
+  biomedical research
+\item
+  Excellent oral and written communication skills: Managed and presented
+  investigational drug data and clinical research guidance to over 20
+  different research investigators throughout the United States across 4
+  different clinical trials; first-author of three publications and
+  co-author of one publication
+\item
+  Strong community spirit and passion for communicating science to a
+  variety of audiences
+\item
+  Cross-functional collaborative and strategic planning skills:
+  Developed new strategies with data, regulatory and clinical trial
+  teams to optimize compliance for over 20 different clinical research
+  sites
+\item
+  Building and maintaining relationships: Developed and maintained key
+  relationships with over 20 clinical research sites to advance
+  investigational drug development for 4 different pharmaceutical
+  companies
+\end{itemize}
+
+\section{Professional Experience}\label{professional-experience}
+
+\textbf{Clinical Research Associate, Medpace Inc., Cincinnati, OH
+(2020-present)}
+
+\begin{itemize}
+\tightlist
+\item
+  Conduct site qualification, initiation, monitoring, and close-out
+  visits according to ICH-GCP, Medpace/Sponsor SOPs, and applicable
+  regulatory requirements
+\item
+  Responsible for overall site management for assigned sites, including
+  written and verbal communication and scheduling of monitoring visits
+\item
+  Responsible for completion of visit reports, follow up letters, and
+  maintenance of study-related databases
+\end{itemize}
+
+\textbf{Graduate Research Assistant, University of Cincinnati,
+Cincinnati, OH (2014-2020)}
+
+\begin{itemize}
+\tightlist
+\item
+  Designed and developed PhD dissertation project on the effects of
+  dioxin on cardiovascular health
+\item
+  Presented results to a diverse audience of clinicians, researchers,
+  and industry executives at the Ohio Valley Society of Toxicology
+  Conference
+\item
+  First-author of two publications
+\item
+  Co-authored one publication
+\item
+  Coordinated research with collaborators at University of Cincinnati
+\item
+  Lead a diverse array of scientific journal club discussions
+\item
+  Provided training to undergraduate and high school students
+\item
+  Co-developed network database to enhance management of reagents
+\item
+  Optimized and wrote new experimental protocols
+\item
+  Contributed to management of the lab budget
+\item
+  Participated in hiring new lab personnel
+\item
+  Conducted experimental research using basic molecular biology
+  methods\\
+\item
+  Wrote successful application for Graduate Student Government Research
+  Fellowship funding to support research
+\end{itemize}
+
+\textbf{M.S. Research Assistant, University of Massachusetts Amherst,
+Amherst, MA (2012-2014)}
+
+\begin{itemize}
+\tightlist
+\item
+  Developed thesis project on the processing and extraction of human
+  sperm DNA for clinical research
+\item
+  Presented results to student researchers and investigators at the
+  University of Massachusetts Annual Research Day
+\item
+  Co-first author of one publication
+\item
+  Provided training to undergraduate students
+\item
+  Participated on a faculty search committee
+\item
+  Conducted experimental research using basic molecular biology methods
+\end{itemize}
+
+\textbf{Research Intern, American Legacy Foundation, Washington, DC
+(2011)}
+
+\begin{itemize}
+\tightlist
+\item
+  Recruited and supported hundreds of participants in a
+  smartphone-enabled study to enhance smoking cessation attempts
+\item
+  Co-developed a smartphone-enabled strategy for the surveillance of
+  tobacco marketing tactics
+\end{itemize}
+
+\section{Leadership and Service}\label{leadership-and-service}
+
+\textbf{President, Health Sciences Graduate Association (HSGA),
+University of Cincinnati (2017-2018)}
+
+\begin{itemize}
+\tightlist
+\item
+  Managed and chaired meetings for a team of 10 officers and 15 graduate
+  student representatives to support a population of over 730 graduate
+  students at the College of Medicine
+\item
+  Redesigned the mission and structure of HSGA to better support,
+  advance, and enrich the graduate student experience
+\item
+  Pioneered the first biannual strategic planning meetings to enable
+  continuous growth, development, and adaptation to meet the mission and
+  goals of HSGA
+\item
+  Pioneered the first monthly newsletters from HSGA to the university
+  community to enhance transparency and open conversations about key
+  university issues
+\item
+  Co-developed the \emph{Project: Citizen Science} initiative to train
+  graduate students to effectively communicate science to various
+  publics
+\item
+  Pioneered the first annual \emph{Science Citizenship Award}: a
+  monetary \$200 award designed to encourage students to develop new
+  initiatives aimed towards the enhancement of science communication,
+  advocacy, and awareness in the community
+\item
+  Developed new team-building and recruitment strategies to ensure a
+  quality experience working with HSGA
+\item
+  Spearheaded successful negotiations for \$2000 in new funding from the
+  College of Medicine to develop and implement new activities to better
+  support the graduate student community
+\item
+  Established and maintained key relationships with university
+  administrators and local organizations to collaborate towards enhanced
+  support of students and community initiatives
+\item
+  Presented on behalf of the graduate student community to the College
+  of Medicine's Dean's Council on issues affecting graduate students
+\item
+  Participated on the Student Advisory Committee on the University
+  Budget to lobby for funds as well as develop and manage the yearly
+  student activities budget
+\item
+  Received Graduate Student Awards for Exemplary Initiative, Exemplary
+  Service in Life Sciences, and Graduate Student Association of the Year
+\end{itemize}
+
+\textbf{Presenter, Cincinnati Museum Center Children's Summer Camp
+(2019)}
+
+\begin{itemize}
+\tightlist
+\item
+  Presented an overview of the field of Toxicology to students between
+  the ages of 10 and 13
+\end{itemize}
+
+\section{Education}\label{education}
+
+\textbf{PhD, Environmental Genetics and Molecular Toxicology
+(2014-2020)}
+
+University of Cincinnati College of Medicine, Cincinnati, OH
+
+\textbf{M.S., Environmental Health Sciences (2012-2014)}
+
+University of Massachusetts Amherst, Amherst, MA
+
+\textbf{B.S., Biology (2008-2012)}
+
+Gettysburg College, Gettysburg, PA
+
+\begin{itemize}
+\tightlist
+\item
+  Received Dean's List honors for three semesters, and Commendation List
+  honors for two semesters
+\end{itemize}
+
+\section{Skills}\label{skills}
+
+\textbf{Computer}: Microsoft Office applications, R Studio, R Markdown,
+Github, Adobe Photoshop
+
+\textbf{Languages}: Basic Spanish
+
+\end{document}

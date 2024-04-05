@@ -1,0 +1,131 @@
+---
+name: Matthew K de Gannes, PhD
+position: Clinical Research Associate
+address: 5400 Medpace Way, \tabularnewline Medpace, Inc., Cincinnati, OH 45227
+phone: 413-588-4414
+email: matthew.degannes@gmail.com
+twitter: mdegannes
+github: degama01
+linkedin: mdegannes
+date: "`r format(Sys.time(), '%B %Y')`"
+headcolor: 000088
+output:
+  vitae::hyndman:
+    keep_tex: yes
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = FALSE, warning = FALSE, message = FALSE)
+library(vitae)
+library(tinytex)
+```
+
+# Education and Qualifications
+
+```{r}
+library(tibble)
+tribble(
+  ~ Degree, ~ Year, ~ Institution, ~ Where,
+  "PhD, Environmental Genetics and Molecular Toxicology", "2014-2020", "University of Cincinnati College of Medicine", "Cincinnati, OH",
+  "M.S., Environmental Health Sciences", "2012-2014", "University of Massachusetts Amherst", "Amherst, MA",
+  "B.S., Biology", "2008-2012", "Gettysburg College", "Gettysburg, PA"
+) %>% 
+  detailed_entries(Degree, Year, Institution, Where)
+```
+
+# Employment History
+
+```{r}
+tribble(
+  ~ Position, ~ Year, ~ Department, ~ Where,
+  "Clinical Research Associate", "2020-present", "Clinical Monitoring Department", "Medpace, Inc., Cincinnati, OH",
+  "Graduate Research Assistant", "2014-2020", "Department of Environmental and Public Health Sciences", "University of Cincinnati, Cincinnati, OH",
+  "Research Intern", "2011", "Schroeder Institute for Tobacco Research and Policy Studies", "American Legacy Foundation, Washington, DC",
+) %>% 
+  detailed_entries(Position, Year, Department, Where)
+```
+
+# Leadership
+
+```{r}
+tribble(
+  ~ Position, ~ Year, ~ Where,
+  "President, Health Sciences Graduate Association", "2017-2018", "University of Cincinnati, Cincinnati, OH",
+  "Vice-President, Health Sciences Graduate Association", "2016-2017", "University of Cincinnati, Cincinnati, OH",
+  "Volunteer Chair, Health Sciences Graduate Association", "2016", "University of Cincinnati, Cincinnati, OH"
+) %>% 
+  detailed_entries(Position, Year, Where)
+```
+
+
+
+# Honors and Awards
+
+```{r}
+tribble(
+  ~ Award, ~ Year, ~ Where,
+  "Graduate Student Award for Exemplary Initiative", "2018", "University of Cincinnati, Cincinnati, OH",
+  "Graduate Student Award for Exemplary Service in Life Sciences", "2018", "University of Cincinnati, Cincinnati, OH",
+  "Graduate Student Association of the Year", "2018", "University of Cincinnati, Cincinnati, OH",
+  "Graduate Student Government Research Fellowship", "2018", "University of Cincinnati, Cincinnati, OH",
+  "Third Place in Poster Presentations, Research Day", "2013", "University of Massachusetts Amherst, Amherst, MA",
+  "Fall Semester Commendation List", "2012", "Gettysburg College, Gettysburg, PA",
+  "Spring Semester Dean's List", "2011", "Gettysburg College, Gettysburg, PA",
+  "Fall Semester Commendation List", "2011", "Gettysburg College, Gettysburg, PA",
+  "Spring Semester Dean's List", "2009", "Gettysburg College, Gettysburg, PA",
+  "Fall Semester Dean's List", "2009", "Gettysburg College, Gettysburg, PA"
+) %>%
+  detailed_entries(Award, Year, Where)
+```
+  
+# Service
+```{r}
+tribble(
+  ~ Position, ~ Year, ~ Where,
+  "SciShortform Science Writing Editor", "2020", "Online SciShortform Group",
+  "Biomedical Careers and Research Presenter", "2019", "Cincinnati Museum Center Children's Summer Camp",
+  "Dean's Council Graduate Student Representative", "2017-2018","University of Cincinnati College of Medicine",
+  "Three Minute Thesis Judge", "2017", "University of Cincinnati College of Medicine",
+  "Co-developer of Project Citizen Science Initiative", "2016-2017", "University of Cincinnati",
+  "Judge for Children's Science Posters", "2016", "Southwest Ohio Science and Engineering Expo",
+  "Faculty Search Committee for Environmental Health Sciences Division", "2012-2013", "University of Massachusetts Amherst"
+) %>% 
+  detailed_entries(Position, Year, Where)
+```
+
+# Teaching Experience
+```{r}
+tribble(
+  ~ Position, ~ Year, ~ Course, ~ Where,
+  "Tutor", "2016", "Molecular and Cellular Biology", "University of Cincinnati",
+  "Teaching Assistant", "2014", "Introduction to Environmental Health Sciences", "University of Massachusetts Amherst",
+  "Teaching Assistant", "2012", "Introduction to Environmental Health Sciences", "University of Massachusetts Amherst"
+) %>% 
+  detailed_entries(Position, Year, Course, Where)
+```
+
+# Conference Presentations
+  1. **de Gannes, M.**, Ko, C.I., Biesiada, J., Zhang, X., Medvedovic, M., Puga, A. (2019). TCDD Alters Dynamic DNA Methylation Patterns Crucial for Cardiomyocyte Maturation and Implicated in Disease. Ohio Valley Society of Toxicology Annual Meeting. *Cincinnati, OH, 2019*
+  2. Kreslake, J.M., Cantrell, J., Vallone, D.M., Tacelosky, M., Ganz, O. Dubois, P., **de Gannes, M.**, Pearson, J.L., Kirchner, T.R. (2012). Development and Implementation of a Mobile Phone-based System for Surveillance of Point-of-Sale Tobacco Marketing Tactics. Society for Research on Nicotine and Tobacco Annual Meeting. *Houston, TX, 2012*
+  
+# Conference Abstracts
+  1. **de Gannes, M.K.**, Ko, C.I., Biesiada, J., Zhang, X., Medvedovic, M., Puga, A. (2020). TCDD Alters Dynamic DNA Methylation Patterns Crucial for Cardiomyocyte Maturation and Implicated in Disease. Society of Toxicology Annual Meeting. *Anaheim, CA, 2020*
+
+# Research Dissertations
+
+## PhD Dissertation
+  1. **de Gannes, M.** Dioxin Impact on Cardiac Development, Structure, Function, and Health, and Implications for Disease. PhD Dissertation.  University of Cincinnati College of Medicine.  
+    + **Advisor:** Dr. Alvaro Puga (Department of Environmental and Public Health Sciences)
+    
+## M.S. Thesis
+  1. **de Gannes, M.** Rapid Method of Processing Sperm for Nucleic Acid Extraction in Clinical Research. M.S. thesis. University of Massachusetts Amherst.  
+    + **Advisor** Dr. Richard Pilsner (Department of Environmental Health Sciences)
+    
+# Publications
+  
+## Journal Articles
+  1. **de Gannes, M.**, Koch, S., Puga, A., & Rubinstein, J. (2021). Developmental and Lifelong Dioxin Exposure Induces Measurable Changes in Cardiac Structure and Function in Adulthood. *Scientific Reports*, **11**(1), 10378. doi:10.1038/s41598-021-89825-w  
+  2. **de Gannes, M.**, Ko, C.I., Zhang, X., Biesiada, J., Niu, L., Koch, S., Medvedovic, M., Rubinstein, J., & Puga, A. (2020). Dioxin Disrupts Dynamic DNA Methylation Patterns in Genes that Govern Cardiomyocyte Maturation. *Toxicological Sciences*, **178**(2), 325-337. doi:10.1093/toxsci/kfaa153
+  3. Ko, C. I., Fan, Y., **de Gannes, M.**, Wang, Q., Xia, Y., & Puga, A. (2016). Repression of the Aryl Hydrocarbon Receptor Is Required to Maintain Mitotic Progression and Prevent Loss of Pluripotency of Embryonic Stem Cells. *Stem Cells*, **34**(12), 2825-2839. doi:10.1002/stem.2456
+  4. Wu, H., **de Gannes, M. K.**, Luchetti, G., & Pilsner, J. R. (2015). Rapid Method for the Isolation of Mammalian Sperm DNA. *Biotechniques*, **58**(6), 293-300. doi:10.2144/000114280  
+    + Co-first author

@@ -1,0 +1,443 @@
+%% Template for a CV
+%% Author: Rob J Hyndman
+
+\documentclass[10pt,a4paper,]{article}
+\usepackage[scaled=0.86]{DejaVuSansMono}
+\usepackage[sfdefault,lf,t]{carlito}
+
+% Change color to blue
+\usepackage{color,xcolor}
+\definecolor{headcolor}{HTML}{88}
+
+\usepackage{ifxetex,ifluatex}
+\usepackage{fixltx2e} % provides \textsubscript
+\ifnum 0\ifxetex 1\fi\ifluatex 1\fi=0 % if pdftex
+  \usepackage[T1]{fontenc}
+  \usepackage[utf8]{inputenc}
+\else % if luatex or xelatex
+  \ifxetex
+    \usepackage{mathspec}
+  \else
+    \usepackage{fontspec}
+  \fi
+  \defaultfontfeatures{Ligatures=TeX,Scale=MatchLowercase}
+\fi
+
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+
+% use upquote if available, for straight quotes in verbatim environments
+\IfFileExists{upquote.sty}{\usepackage{upquote}}{}
+% use microtype if available
+\IfFileExists{microtype.sty}{%
+\usepackage[]{microtype}
+\UseMicrotypeSet[protrusion]{basicmath} % disable protrusion for tt fonts
+}{}
+\PassOptionsToPackage{hyphens}{url} % url is loaded by hyperref
+\usepackage[unicode=true,hidelinks]{hyperref}
+\urlstyle{same}  % don't use monospace font for urls
+\usepackage{geometry}
+\geometry{left=1.75cm,right=1.75cm,top=2.2cm,bottom=2cm}
+
+\usepackage{longtable,booktabs}
+% Fix footnotes in tables (requires footnote package)
+\IfFileExists{footnote.sty}{\usepackage{footnote}\makesavenoteenv{long table}}{}
+\IfFileExists{parskip.sty}{%
+\usepackage{parskip}
+}{% else
+\setlength{\parindent}{0pt}
+\setlength{\parskip}{6pt plus 2pt minus 1pt}
+}
+\setlength{\emergencystretch}{3em}  % prevent overfull lines
+\providecommand{\tightlist}{%
+  \setlength{\itemsep}{0pt}\setlength{\parskip}{0pt}}
+\setcounter{secnumdepth}{0}
+
+% set default figure placement to htbp
+\makeatletter
+\def\fps@figure{htbp}
+\makeatother
+
+
+
+\date{March 2024}
+
+
+\usepackage{paralist,ragged2e,datetime}
+\usepackage[hyphens]{url}
+\usepackage{fancyhdr,enumitem,pifont}
+\usepackage[compact,small,sf,bf]{titlesec}
+
+\RaggedRight
+\sloppy
+
+% Header and footer
+\pagestyle{fancy}
+\makeatletter
+\lhead{\sf\textcolor[gray]{0.4}{Curriculum Vitae: \@name}}
+\rhead{\sf\textcolor[gray]{0.4}{\thepage}}
+\cfoot{}
+\def\headrule{{\color[gray]{0.4}\hrule\@height\headrulewidth\@width\headwidth \vskip-\headrulewidth}}
+\makeatother
+
+% Header box
+\usepackage{tabularx}
+
+\makeatletter
+\def\name#1{\def\@name{#1}}
+\def\info#1{\def\@info{#1}}
+\makeatother
+\newcommand{\shadebox}[3][.9]{\fcolorbox[gray]{0}{#1}{\parbox{#2}{#3}}}
+
+\usepackage{calc}
+\newlength{\headerboxwidth}
+\setlength{\headerboxwidth}{\textwidth}
+%\addtolength{\headerboxwidth}{0.2cm}
+\makeatletter
+\def\maketitle{
+\thispagestyle{plain}
+\vspace*{-1.4cm}
+\shadebox[0.9]{\headerboxwidth}{\sf\color{headcolor}\hfil
+\hbox to 0.98\textwidth{\begin{tabular}{l}
+\\[-0.3cm]
+\LARGE\textbf{\@name}
+\\[0.1cm]\large Clinical Research Associate\\[0.6cm]
+\normalsize\textbf{Curriculum Vitae}\\
+\normalsize March 2024
+\end{tabular}
+\hfill\hbox{\fontsize{9}{12}\sf
+\begin{tabular}{@{}rl@{}}
+\@info
+\end{tabular}}}\hfil
+}
+\vspace*{0.2cm}}
+\makeatother
+
+% Section headings
+\titlelabel{}
+\titlespacing{\section}{0pt}{1.5ex}{0.5ex}
+\titleformat*{\section}{\color{headcolor}\large\sf\bfseries}
+\titleformat*{\subsection}{\color{headcolor}\sf\bfseries}
+\titlespacing{\subsection}{0pt}{1ex}{0.5ex}
+
+% Miscellaneous dimensions
+\setlength{\parskip}{0ex}
+\setlength{\parindent}{0em}
+\setlength{\headheight}{15pt}
+\setlength{\tabcolsep}{0.15cm}
+\clubpenalty = 10000
+\widowpenalty = 10000
+\setlist{itemsep=1pt}
+\setdescription{labelwidth=1.2cm,leftmargin=1.5cm,labelindent=1.5cm,font=\rm}
+
+% Make nicer bullets
+\renewcommand{\labelitemi}{\ding{228}}
+
+\usepackage{booktabs,fontawesome5}
+%\usepackage[t1,scale=0.86]{sourcecodepro}
+
+\name{Matthew K de Gannes, PhD}
+\def\imagetop#1{\vtop{\null\hbox{#1}}}
+\info{%
+\raisebox{-0.05cm}{\imagetop{\faIcon{map-marker-alt}}} &  \imagetop{\begin{tabular}{@{}l@{}}5400
+Medpace Way, \tabularnewline Medpace, Inc., Cincinnati, OH
+45227\end{tabular}}\\ %
+% %
+%
+\faIcon{phone-alt} & 413-588-4414\\%
+\faIcon{envelope} & \href{mailto:matthew.degannes@gmail.com}{\nolinkurl{matthew.degannes@gmail.com}}\\%
+\faIcon{twitter} & \href{https://twitter.com/mdegannes}{@mdegannes}\\%
+\faIcon{github} & \href{https://github.com/degama01}{degama01}\\%
+\faIcon{linkedin} & \href{https://www.linkedin.com/in/mdegannes}{mdegannes}\\%
+%
+%
+%
+}
+
+
+%\usepackage{inconsolata}
+
+
+\setlength\LTleft{0pt}
+\setlength\LTright{0pt}
+
+% Pandoc CSL macros
+
+
+\def\endfirstpage{\newpage}
+
+\begin{document}
+\maketitle
+
+
+\section{Education and
+Qualifications}\label{education-and-qualifications}
+
+\begin{longtable}{@{\extracolsep{\fill}}ll}
+2014-2020 & \parbox[t]{0.85\textwidth}{%
+\textbf{PhD, Environmental Genetics and Molecular Toxicology}\hfill{\footnotesize University of Cincinnati College of Medicine}\newline
+  Cincinnati, OH\par%
+  \empty%
+\vspace{\parsep}}\\
+2012-2014 & \parbox[t]{0.85\textwidth}{%
+\textbf{M.S., Environmental Health Sciences}\hfill{\footnotesize University of Massachusetts Amherst}\newline
+  Amherst, MA\par%
+  \empty%
+\vspace{\parsep}}\\
+2008-2012 & \parbox[t]{0.85\textwidth}{%
+\textbf{B.S., Biology}\hfill{\footnotesize Gettysburg College}\newline
+  Gettysburg, PA\par%
+  \empty%
+\vspace{\parsep}}\\
+\end{longtable}
+
+\section{Employment History}\label{employment-history}
+
+\begin{longtable}{@{\extracolsep{\fill}}ll}
+2020-present & \parbox[t]{0.85\textwidth}{%
+\textbf{Clinical Research Associate}\hfill{\footnotesize Clinical Monitoring Department}\newline
+  Medpace, Inc., Cincinnati, OH\par%
+  \empty%
+\vspace{\parsep}}\\
+2014-2020 & \parbox[t]{0.85\textwidth}{%
+\textbf{Graduate Research Assistant}\hfill{\footnotesize Department of Environmental and Public Health Sciences}\newline
+  University of Cincinnati, Cincinnati, OH\par%
+  \empty%
+\vspace{\parsep}}\\
+2011 & \parbox[t]{0.85\textwidth}{%
+\textbf{Research Intern}\hfill{\footnotesize Schroeder Institute for Tobacco Research and Policy Studies}\newline
+  American Legacy Foundation, Washington, DC\par%
+  \empty%
+\vspace{\parsep}}\\
+\end{longtable}
+
+\section{Leadership}\label{leadership}
+
+\begin{longtable}{@{\extracolsep{\fill}}ll}
+2017-2018 & \parbox[t]{0.85\textwidth}{%
+\textbf{President, Health Sciences Graduate Association}\hfill{\footnotesize University of Cincinnati, Cincinnati, OH}\newline
+  \empty%
+  \empty%
+\vspace{\parsep}}\\
+2016-2017 & \parbox[t]{0.85\textwidth}{%
+\textbf{Vice-President, Health Sciences Graduate Association}\hfill{\footnotesize University of Cincinnati, Cincinnati, OH}\newline
+  \empty%
+  \empty%
+\vspace{\parsep}}\\
+2016 & \parbox[t]{0.85\textwidth}{%
+\textbf{Volunteer Chair, Health Sciences Graduate Association}\hfill{\footnotesize University of Cincinnati, Cincinnati, OH}\newline
+  \empty%
+  \empty%
+\vspace{\parsep}}\\
+\end{longtable}
+
+\section{Honors and Awards}\label{honors-and-awards}
+
+\begin{longtable}{@{\extracolsep{\fill}}ll}
+2018 & \parbox[t]{0.85\textwidth}{%
+\textbf{Graduate Student Award for Exemplary Initiative}\hfill{\footnotesize University of Cincinnati, Cincinnati, OH}\newline
+  \empty%
+  \empty%
+\vspace{\parsep}}\\
+2018 & \parbox[t]{0.85\textwidth}{%
+\textbf{Graduate Student Award for Exemplary Service in Life Sciences}\hfill{\footnotesize University of Cincinnati, Cincinnati, OH}\newline
+  \empty%
+  \empty%
+\vspace{\parsep}}\\
+2018 & \parbox[t]{0.85\textwidth}{%
+\textbf{Graduate Student Association of the Year}\hfill{\footnotesize University of Cincinnati, Cincinnati, OH}\newline
+  \empty%
+  \empty%
+\vspace{\parsep}}\\
+2018 & \parbox[t]{0.85\textwidth}{%
+\textbf{Graduate Student Government Research Fellowship}\hfill{\footnotesize University of Cincinnati, Cincinnati, OH}\newline
+  \empty%
+  \empty%
+\vspace{\parsep}}\\
+2013 & \parbox[t]{0.85\textwidth}{%
+\textbf{Third Place in Poster Presentations, Research Day}\hfill{\footnotesize University of Massachusetts Amherst, Amherst, MA}\newline
+  \empty%
+  \empty%
+\vspace{\parsep}}\\
+2012 & \parbox[t]{0.85\textwidth}{%
+\textbf{Fall Semester Commendation List}\hfill{\footnotesize Gettysburg College, Gettysburg, PA}\newline
+  \empty%
+  \empty%
+\vspace{\parsep}}\\
+2011 & \parbox[t]{0.85\textwidth}{%
+\textbf{Spring Semester Dean's List}\hfill{\footnotesize Gettysburg College, Gettysburg, PA}\newline
+  \empty%
+  \empty%
+\vspace{\parsep}}\\
+2011 & \parbox[t]{0.85\textwidth}{%
+\textbf{Fall Semester Commendation List}\hfill{\footnotesize Gettysburg College, Gettysburg, PA}\newline
+  \empty%
+  \empty%
+\vspace{\parsep}}\\
+2009 & \parbox[t]{0.85\textwidth}{%
+\textbf{Spring Semester Dean's List}\hfill{\footnotesize Gettysburg College, Gettysburg, PA}\newline
+  \empty%
+  \empty%
+\vspace{\parsep}}\\
+2009 & \parbox[t]{0.85\textwidth}{%
+\textbf{Fall Semester Dean's List}\hfill{\footnotesize Gettysburg College, Gettysburg, PA}\newline
+  \empty%
+  \empty%
+\vspace{\parsep}}\\
+\end{longtable}
+
+\section{Service}\label{service}
+
+\begin{longtable}{@{\extracolsep{\fill}}ll}
+2020 & \parbox[t]{0.85\textwidth}{%
+\textbf{SciShortform Science Writing Editor}\hfill{\footnotesize Online SciShortform Group}\newline
+  \empty%
+  \empty%
+\vspace{\parsep}}\\
+2019 & \parbox[t]{0.85\textwidth}{%
+\textbf{Biomedical Careers and Research Presenter}\hfill{\footnotesize Cincinnati Museum Center Children's Summer Camp}\newline
+  \empty%
+  \empty%
+\vspace{\parsep}}\\
+2017-2018 & \parbox[t]{0.85\textwidth}{%
+\textbf{Dean's Council Graduate Student Representative}\hfill{\footnotesize University of Cincinnati College of Medicine}\newline
+  \empty%
+  \empty%
+\vspace{\parsep}}\\
+2017 & \parbox[t]{0.85\textwidth}{%
+\textbf{Three Minute Thesis Judge}\hfill{\footnotesize University of Cincinnati College of Medicine}\newline
+  \empty%
+  \empty%
+\vspace{\parsep}}\\
+2016-2017 & \parbox[t]{0.85\textwidth}{%
+\textbf{Co-developer of Project Citizen Science Initiative}\hfill{\footnotesize University of Cincinnati}\newline
+  \empty%
+  \empty%
+\vspace{\parsep}}\\
+2016 & \parbox[t]{0.85\textwidth}{%
+\textbf{Judge for Children's Science Posters}\hfill{\footnotesize Southwest Ohio Science and Engineering Expo}\newline
+  \empty%
+  \empty%
+\vspace{\parsep}}\\
+2012-2013 & \parbox[t]{0.85\textwidth}{%
+\textbf{Faculty Search Committee for Environmental Health Sciences Division}\hfill{\footnotesize University of Massachusetts Amherst}\newline
+  \empty%
+  \empty%
+\vspace{\parsep}}\\
+\end{longtable}
+
+\section{Teaching Experience}\label{teaching-experience}
+
+\begin{longtable}{@{\extracolsep{\fill}}ll}
+2016 & \parbox[t]{0.85\textwidth}{%
+\textbf{Tutor}\hfill{\footnotesize Molecular and Cellular Biology}\newline
+  University of Cincinnati\par%
+  \empty%
+\vspace{\parsep}}\\
+2014 & \parbox[t]{0.85\textwidth}{%
+\textbf{Teaching Assistant}\hfill{\footnotesize Introduction to Environmental Health Sciences}\newline
+  University of Massachusetts Amherst\par%
+  \empty%
+\vspace{\parsep}}\\
+2012 & \parbox[t]{0.85\textwidth}{%
+\textbf{Teaching Assistant}\hfill{\footnotesize Introduction to Environmental Health Sciences}\newline
+  University of Massachusetts Amherst\par%
+  \empty%
+\vspace{\parsep}}\\
+\end{longtable}
+
+\section{Conference Presentations}\label{conference-presentations}
+
+\begin{enumerate}
+\def\labelenumi{\arabic{enumi}.}
+\tightlist
+\item
+  \textbf{de Gannes, M.}, Ko, C.I., Biesiada, J., Zhang, X., Medvedovic,
+  M., Puga, A. (2019). TCDD Alters Dynamic DNA Methylation Patterns
+  Crucial for Cardiomyocyte Maturation and Implicated in Disease. Ohio
+  Valley Society of Toxicology Annual Meeting. \emph{Cincinnati, OH,
+  2019}
+\item
+  Kreslake, J.M., Cantrell, J., Vallone, D.M., Tacelosky, M., Ganz, O.
+  Dubois, P., \textbf{de Gannes, M.}, Pearson, J.L., Kirchner, T.R.
+  (2012). Development and Implementation of a Mobile Phone-based System
+  for Surveillance of Point-of-Sale Tobacco Marketing Tactics. Society
+  for Research on Nicotine and Tobacco Annual Meeting. \emph{Houston,
+  TX, 2012}
+\end{enumerate}
+
+\section{Conference Abstracts}\label{conference-abstracts}
+
+\begin{enumerate}
+\def\labelenumi{\arabic{enumi}.}
+\tightlist
+\item
+  \textbf{de Gannes, M.K.}, Ko, C.I., Biesiada, J., Zhang, X.,
+  Medvedovic, M., Puga, A. (2020). TCDD Alters Dynamic DNA Methylation
+  Patterns Crucial for Cardiomyocyte Maturation and Implicated in
+  Disease. Society of Toxicology Annual Meeting. \emph{Anaheim, CA,
+  2020}
+\end{enumerate}
+
+\section{Research Dissertations}\label{research-dissertations}
+
+\subsection{PhD Dissertation}\label{phd-dissertation}
+
+\begin{enumerate}
+\def\labelenumi{\arabic{enumi}.}
+\tightlist
+\item
+  \textbf{de Gannes, M.} Dioxin Impact on Cardiac Development,
+  Structure, Function, and Health, and Implications for Disease. PhD
+  Dissertation. University of Cincinnati College of Medicine.\\
+  + \textbf{Advisor:} Dr.~Alvaro Puga (Department of Environmental and
+  Public Health Sciences)
+\end{enumerate}
+
+\subsection{M.S. Thesis}\label{m.s.-thesis}
+
+\begin{enumerate}
+\def\labelenumi{\arabic{enumi}.}
+\tightlist
+\item
+  \textbf{de Gannes, M.} Rapid Method of Processing Sperm for Nucleic
+  Acid Extraction in Clinical Research. M.S. thesis. University of
+  Massachusetts Amherst.\\
+  + \textbf{Advisor} Dr.~Richard Pilsner (Department of Environmental
+  Health Sciences)
+\end{enumerate}
+
+\section{Publications}\label{publications}
+
+\subsection{Journal Articles}\label{journal-articles}
+
+\begin{enumerate}
+\def\labelenumi{\arabic{enumi}.}
+\tightlist
+\item
+  \textbf{de Gannes, M.}, Koch, S., Puga, A., \& Rubinstein, J. (2021).
+  Developmental and Lifelong Dioxin Exposure Induces Measurable Changes
+  in Cardiac Structure and Function in Adulthood. \emph{Scientific
+  Reports}, \textbf{11}(1), 10378.
+  \url{doi:10.1038/s41598-021-89825-w}\\
+\item
+  \textbf{de Gannes, M.}, Ko, C.I., Zhang, X., Biesiada, J., Niu, L.,
+  Koch, S., Medvedovic, M., Rubinstein, J., \& Puga, A. (2020). Dioxin
+  Disrupts Dynamic DNA Methylation Patterns in Genes that Govern
+  Cardiomyocyte Maturation. \emph{Toxicological Sciences},
+  \textbf{178}(2), 325-337. \url{doi:10.1093/toxsci/kfaa153}
+\item
+  Ko, C. I., Fan, Y., \textbf{de Gannes, M.}, Wang, Q., Xia, Y., \&
+  Puga, A. (2016). Repression of the Aryl Hydrocarbon Receptor Is
+  Required to Maintain Mitotic Progression and Prevent Loss of
+  Pluripotency of Embryonic Stem Cells. \emph{Stem Cells},
+  \textbf{34}(12), 2825-2839. \url{doi:10.1002/stem.2456}
+\item
+  Wu, H., \textbf{de Gannes, M. K.}, Luchetti, G., \& Pilsner, J. R.
+  (2015). Rapid Method for the Isolation of Mammalian Sperm DNA.
+  \emph{Biotechniques}, \textbf{58}(6), 293-300.
+  \url{doi:10.2144/000114280}\\
+  + Co-first author
+\end{enumerate}
+
+\end{document}

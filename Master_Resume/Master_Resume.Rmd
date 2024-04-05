@@ -1,0 +1,120 @@
+---
+name: Matthew K de Gannes, PhD
+docname: "Resume"
+fontawesome: yes
+position: "Clinical Research Associate"
+address: "Medpace, Inc., 5400 Medpace Way, Cincinnati OH 45227"
+phone: "413-588-4414"
+email: "matthew.degannes@gmail.com"
+linkedin: mdegannes
+date: "`r format(Sys.time(), '%B %Y')`"
+output: function(...) vitae::cv_document(..., template = "pricetemplate.tex", citation_package = "biblatex")
+---
+
+```{r setup, include=FALSE}
+# To save log files
+# rmarkdown::render("resume/nprice_resume.Rmd", clean = FALSE)
+
+knitr::opts_chunk$set(echo = FALSE, 
+                      warning = FALSE, 
+                      message = FALSE)
+
+library(tidyverse)
+library(vitae)
+library(lubridate)
+library(glue)
+library(rlang)
+library(tinytex)
+```
+
+# Summary of Qualifications
+
+**Clinical Research Associate with 10 years of experience in the following areas:**
+
+  * Highly motivated writer with extensive training and expertise in biomedical research
+  * Excellent oral and written communication skills: Managed and presented investigational drug data and clinical research guidance to over 20 different research investigators throughout the United States across 4 different clinical trials; first-author of three publications and co-author of one publication
+  * Strong community spirit and passion for communicating science to a variety of audiences
+  * Cross-functional collaborative and strategic planning skills: Developed new strategies with data, regulatory and clinical trial teams to optimize compliance for over 20 different clinical research sites
+  * Building and maintaining relationships: Developed and maintained key relationships with over 20 clinical research sites to advance investigational drug development for 4 different pharmaceutical companies
+  
+# Professional Experience
+
+**Clinical Research Associate, Medpace Inc., Cincinnati, OH (2020-present)**
+
+  * Conduct site qualification, initiation, monitoring, and close-out visits according to ICH-GCP, Medpace/Sponsor SOPs, and applicable regulatory requirements
+  * Responsible for overall site management for assigned sites, including written and verbal communication and scheduling of monitoring visits
+  * Responsible for completion of visit reports, follow up letters, and maintenance of study-related databases
+
+**Graduate Research Assistant, University of Cincinnati, Cincinnati, OH (2014-2020)**
+
+  * Designed and developed PhD dissertation project on the effects of dioxin on cardiovascular health
+  * Presented results to a diverse audience of clinicians, researchers, and industry executives at the Ohio Valley Society of Toxicology Conference
+  * First-author of two publications
+  * Co-authored one publication
+  * Coordinated research with collaborators at University of Cincinnati
+  * Lead a diverse array of scientific journal club discussions
+  * Provided training to undergraduate and high school students
+  * Co-developed network database to enhance management of reagents
+  * Optimized and wrote new experimental protocols
+  * Contributed to management of the lab budget
+  * Participated in hiring new lab personnel
+  * Conducted experimental research using basic molecular biology methods  
+  * Wrote successful application for Graduate Student Government Research Fellowship funding to support research
+
+**M.S. Research Assistant, University of Massachusetts Amherst, Amherst, MA (2012-2014)**
+
+  * Developed thesis project on the processing and extraction of human sperm DNA for clinical research
+  * Presented results to student researchers and investigators at the University of Massachusetts Annual Research Day
+  * Co-first author of one publication
+  * Provided training to undergraduate students
+  * Participated on a faculty search committee
+  * Conducted experimental research using basic molecular biology methods  
+
+**Research Intern, American Legacy Foundation, Washington, DC (2011)**
+
+  * Recruited and supported hundreds of participants in a smartphone-enabled study to enhance smoking cessation attempts
+  * Co-developed a smartphone-enabled strategy for the surveillance of tobacco marketing tactics
+
+# Leadership and Service
+
+**President, Health Sciences Graduate Association (HSGA), University of Cincinnati (2017-2018)**
+
+  * Managed and chaired meetings for a team of 10 officers and 15 graduate student representatives to support a population of over 730 graduate students at the College of Medicine
+  * Redesigned the mission and structure of HSGA to better support, advance, and enrich the graduate student experience
+  * Pioneered the first biannual strategic planning meetings to enable continuous growth, development, and adaptation to meet the mission and goals of HSGA
+  * Pioneered the first monthly newsletters from HSGA to the university community to enhance transparency and open conversations about key university issues
+  * Co-developed the *Project: Citizen Science* initiative to train graduate students to effectively communicate science to various publics
+  * Pioneered the first annual *Science Citizenship Award*: a monetary $200 award designed to encourage students to develop new initiatives aimed towards the enhancement of science communication, advocacy, and awareness in the community
+  * Developed new team-building and recruitment strategies to ensure a quality experience working with HSGA
+  * Spearheaded successful negotiations for $2000 in new funding from the College of Medicine to develop and implement new activities to better support the graduate student community
+  * Established and maintained key relationships with university administrators and local organizations to collaborate towards enhanced support of students and community initiatives
+  * Presented on behalf of the graduate student community to the College of Medicine's Dean's Council on issues affecting graduate students
+  * Participated on the Student Advisory Committee on the University Budget to lobby for funds as well as develop and manage the yearly student activities budget
+  * Received Graduate Student Awards for Exemplary Initiative, Exemplary Service in Life Sciences, and Graduate Student Association of the Year
+
+**Presenter, Cincinnati Museum Center Children's Summer Camp (2019)**
+
+  * Presented an overview of the field of Toxicology to students between the ages of 10 and 13
+
+# Education
+
+**PhD, Environmental Genetics and Molecular Toxicology (2014-2020)**  
+
+University of Cincinnati College of Medicine, Cincinnati, OH
+
+
+**M.S., Environmental Health Sciences (2012-2014)**  
+
+University of Massachusetts Amherst, Amherst, MA
+
+**B.S., Biology (2008-2012)**  
+
+Gettysburg College, Gettysburg, PA
+
+  * Received Dean's List honors for three semesters, and Commendation List honors for two semesters
+
+# Skills
+
+**Computer**: Microsoft Office applications, R Studio, R Markdown, Github, Adobe Photoshop  
+
+**Languages**: Basic Spanish
